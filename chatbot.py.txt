@@ -1,0 +1,26 @@
+# Rule-Based Chatbot
+
+print("Chatbot: Hello! I am a rule-based chatbot.")
+print("Chatbot: Type 'bye' to exit.\n")
+
+while True:
+    user_input = input("You: ").lower()
+
+    if user_input in ["hello", "hi", "hey"]:
+        print("Chatbot: Hello! How can I help you?")
+
+    elif "your name" in user_input:
+        print("Chatbot: I am a simple rule-based chatbot.")
+
+    elif "how are you" in user_input:
+        print("Chatbot: I'm doing great! Thanks for asking.")
+
+    elif "help" in user_input:
+        print("Chatbot: I can respond to greetings and simple questions.")
+
+    elif user_input == "bye":
+        print("Chatbot: Goodbye! Have a nice day.")
+        break
+
+    else:
+        print("Chatbot: Sorry, I didn't understand that.")
